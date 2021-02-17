@@ -1,0 +1,108 @@
+<DOCTYPE!>
+<html>
+    git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+    <head>
+        <title>Hello Gokul</title>
+        <style type="text/css">
+            h1 {    
+
+                color: red;
+            }
+            .firstParagraph {
+                color: blue;
+            }
+            .firstBlock {
+                color: green;
+                font-size: 20px;
+            }
+            .link {
+                color: violet;
+                font-weight: bold;
+            }
+            #secondForm {
+                background-color: lightblue;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> WElcome to Html 1 </h1>
+            <h2> WElcome to Html 2 </h2>
+            <h3> WElcome to Html 3 </h3>
+            <h4> WElcome to Html 4 </h4>
+        </header>
+        <section style="border: 2px solid blue;">
+            <p class="firstBlock">
+                This is a legal and binding agreement between you, the user ("User" or "You") of the Services, as defined below, and 21st Century Fox Star US LLC ("Star US") stating the terms that govern Your use of the Site or the Platform, as defined below. BY ACCEPTING THESE TERMS OF USE IN ANY MANNER OR ACCESSING THIS WEBSITE, YOU AGREE TO THESE TERMS OF USE and the Privacy Policy accessible at www.hotstar.com/us/terms-of-use and www.hotstar.com/us/privacy-policy respectively and any other terms which govern the Site (together referred to as "Terms of Use"). IF YOU DO NOT AGREE TO THESE TERMS OF USE, YOU ARE NOT ENTITLED TO ACCESS OR USE THE SERVICES.
+            </p>
+            <p>
+                This is a legal and binding agreement between you, the user ("User" or "You") of the Services, as defined below, and 21st Century Fox Star US LLC ("Star US") stating the terms that govern Your use of the Site or the Platform, as defined below. BY ACCEPTING THESE TERMS OF USE IN ANY MANNER OR ACCESSING THIS WEBSITE, YOU AGREE TO THESE TERMS OF USE and the Privacy Policy accessible at www.hotstar.com/us/terms-of-use and www.hotstar.com/us/privacy-policy respectively and any other terms which govern the Site (together referred to as "Terms of Use"). IF YOU DO NOT AGREE TO THESE TERMS OF USE, YOU ARE NOT ENTITLED TO ACCESS OR USE THE SERVICES.
+            </p>
+            <div class="firstParagraph">
+                Star US provides an online website 'www.hotstar.com/us' as an interactive platform for its viewers and any associated mobile sites, applications (collectively, "Site") to, among other things, view series and programs, films, sports content including live sports content, trailers of upcoming series, view videos and/or photos of their favorite characters on series, read recaps of series, international content including viewing schedules of content offered etc.
+            </div>
+            <div>
+                Star US provides an online website <span class="link">'www.hotstar.com/us'</span> as an interactive platform for its viewers and any associated mobile sites, applications (collectively, "Site") to, among other things, view series and programs, films, sports content including live sports content, trailers of upcoming series, view videos and/or photos of their favorite characters on series, read recaps of series, international content including viewing schedules of content offered etc.
+            </div>
+            Form 1: <form>
+                Username: <input type="text" name="username" />
+                Password: <input type="password" name="password" />
+                <input type="button" name="signin" value="Sign In" onClick="alert(document.forms[0].username.value);"/>
+            </form>
+
+            Form 2: <form id="secondForm">
+                Username: <input type="text" name="username" />
+                Password: <input type="password" name="password" />
+                <input type="button" name="signin" value="Sign In" onClick="alert(document.getElementById('secondForm').username.value);"/>
+            </form>
+
+            Form 3: <form id="thirdForm">
+                Username: <input type="text" name="username" />
+                Password: <input type="password" name="password" />
+                <input type="submit" name="signin" value="Sign In"/>
+            </form>
+
+            Form 4: <form id="fourthForm" method="post">
+                Username: <input type="text" name="username" />
+                Password: <input type="password" name="password" />
+                <input type="submit" name="signin" value="Sign In"/>
+            </form>
+
+            Form 5: <form id="fifthForm" action="https://www.google.com/">
+                Username: <input type="text" name="username" />
+                Password: <input type="password" name="password" />
+                <input type="submit" name="signin" value="Sign In"/>
+            </form>
+
+            Form 6: <form id="sixthForm" action="https://www.google.com/" method="post">
+                Username: <input type="text" name="username" />
+                Password: <input type="password" name="password" />
+                <input type="submit" name="signin" value="Sign In"/>
+            </form>
+
+            Form 7: <form id="register" method="post">
+                Name: <input type="text" name="name" />
+                Age: <input type="text" name="age" />
+                Bio: <textarea rows="3" cols="20" name="bio" ></textarea>
+
+                Degree: <select name="degree">
+                            <option>
+                                Please select
+                            </option>
+                            <option value="bsc">
+                                Bachelor of science
+                            </option>
+                            <option value="btech">
+                                Bachelor of Technology
+                            </option>
+                            <option value="phd">
+                                Post graduate
+                            </option>
+                        </select>
+                    <input type="submit" name="register" value="Register"/>
+            </form>
+        </section>
+        <footer></footer>
+    </body>
+</html>
